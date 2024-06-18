@@ -60,7 +60,7 @@ a {
   color: white;
 }
 
-.nav-link:hover {
+nav a:hover {
   color: #482ff7;
 }
 
