@@ -16,53 +16,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/place.css" />
-    <title>Document</title>
   </head>
   <body>
     <div class="container">
       <header>
         <h1 class="title">Brazil</h1>
       </header>
-      <div class="content">
-        <picture>
-          <source srcset="images/brazil-big.webp" media="(min-width: 992px)" />
-          <img
-            srcset="images/brazil-800px.webp"
-            alt="Brazil"
-            class="image-container"
-          />
-        </picture>
-        <div class="data">
-          <div class="section-title">
-            <h2>Data</h2>
-          </div>
-          <p><strong>Area:</strong> 8,515,767 sq km</p>
-          <p><strong>Population:</strong> 211,000,000</p>
-          <p><strong>Capital:</strong> Brasília</p>
-          <p><strong>Languages:</strong> Portuguese</p>
-          <p><strong>Currency:</strong> Brazilian Real</p>
-          <p><strong>Time Zone:</strong> UTC-3</p>
-          <p><strong>Calling Code:</strong> +55</p>
-          <p><strong>Internet TLD:</strong> .br</p>
-        </div>
-        <div class="weather">
-          <div>
+      <main>
+        <div class="content">
+          <picture>
+            <source
+              srcset="images/brazil-big.webp"
+              media="(min-width: 992px)"
+            />
+            <img
+              srcset="images/brazil-800px.webp"
+              src="images/brazil-800px.webp"
+              alt="Brazil"
+              class="image-container"
+            />
+          </picture>
+          <div class="data">
             <div class="section-title">
-              <h2>Weather</h2>
+              <h2>Data</h2>
             </div>
-            <p><strong>Temperature:</strong> 9 °C</p>
-            <p><strong>Conditions:</strong> Sunny</p>
-            <p><strong>Wind:</strong> 21 km/h</p>
-            <p><strong>Humidity:</strong> 70%</p>
-            <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+            <p><strong>Area:</strong> 8,515,767 sq km</p>
+            <p><strong>Population:</strong> 211,000,000</p>
+            <p><strong>Capital:</strong> Brasília</p>
+            <p><strong>Languages:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real</p>
+            <p><strong>Time Zone:</strong> UTC-3</p>
+            <p><strong>Calling Code:</strong> +55</p>
+            <p><strong>Internet TLD:</strong> .br</p>
+          </div>
+          <div class="weather">
+            <div>
+              <div class="section-title">
+                <h2>Weather</h2>
+              </div>
+              <p><strong>Temperature:</strong> 9 °C</p>
+              <p><strong>Conditions:</strong> Sunny</p>
+              <p><strong>Wind:</strong> 21 km/h</p>
+              <p><strong>Humidity:</strong> 70%</p>
+              <p>
+                <strong>Wind Chill:</strong> <span id="windChill">N/A</span>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <p><span id="currentyear"></span> - Bernardo Marques - Brazil</p>
-        <p>Last modification: <span id="lastModified"></span></p>
-      </div>
+        <div class="footer">
+          <p><span id="currentyear"></span> - Bernardo Marques - Brazil</p>
+          <p>Last modification: <span id="lastModified"></span></p>
+        </div>
+      </main>
     </div>
+
     <script src="scripts/place.js" defer></script>
   </body>
 </html>
