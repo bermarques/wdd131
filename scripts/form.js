@@ -29,7 +29,24 @@ const products = [
 const productSelect = document.getElementById("productName");
 products.forEach((product) => {
   const option = document.createElement("option");
-  option.value = product.name;
+  option.value = product.id;
   option.textContent = product.name;
   productSelect.appendChild(option);
 });
+
+const incrementReviewCounter = () => {
+  let reviewCount = localStorage.getItem("reviewCount");
+
+  if (reviewCount === null) {
+    reviewCount = 0;
+  } else {
+    reviewCount = parseInt(reviewCount, 10);
+  }
+  reviewCount++;
+
+  localStorage.setItem("reviewCount", reviewCount);
+};
+
+window.onload = incrementReviewCounter;
+const form = document.getElementById("form");
+form.addEventListener("submit", incrementReviewCounter);
