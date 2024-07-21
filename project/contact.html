@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marques Law - Contact</title>
+    <link rel="stylesheet" href="../styles/project.css" />
+    <link rel="stylesheet" href="../styles/project-large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="middle-text">Contact</h1>
+        <div class="logo">
+          <img src="../images/logo.png" loading="lazy" alt="logo" />
+        </div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/project/home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/project/services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="/project/contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h2>
+        In this channel, you can reach out to any of our teams, send suggestions
+        and comments. Just leave your details and choose the topic that best
+        matches your needs. Count on us!
+      </h2>
+      <form id="form">
+        <div class="half">
+          <fieldset>
+            <input
+              placeholder="Your name:"
+              type="text"
+              id="userName"
+              name="userName"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <select>
+              <option disabled selected>Area of interest</option>
+              <option value="administrative">Administrative</option>
+              <option value="labor">Labor and Social Security</option>
+              <option value="banking">Banking</option>
+              <option value="consumer">Consumer</option>
+              <option value="enterprise">Enterprise</option>
+              <option value="tributary">Tributary</option>
+              <option value="patents">patents</option>
+              <option value="health">Health</option>
+            </select>
+          </fieldset>
+        </div>
+
+        <div class="half">
+          <fieldset>
+            <input
+              placeholder="E-mail"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Phone number"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+            />
+          </fieldset>
+        </div>
+        <fieldset>
+          <textarea
+            placeholder="Message"
+            id="review"
+            name="review"
+            required
+          ></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <p><span id="currentyear"></span> Marques Law Firm @ 2024</p>
+    </footer>
+    <script src="../scripts/project.js" defer></script>
+  </body>
+</html>

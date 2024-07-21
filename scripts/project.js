@@ -16,3 +16,10 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+const today = new Date();
+const currentYear = document.querySelector("#currentyear");
+const lastModified = document.querySelector("#lastModified");
+
+currentYear.innerHTML = today.getFullYear();
+lastModified.innerHTML = document.lastModified;
